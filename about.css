@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* cursor: url(cursors/crosshair-2.png), auto; */
+  }
+  
+  body {
+    background-color: rgb(25, 25, 25);
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 3rem;
+  }
+  
+  a {
+    position: relative;
+    text-decoration: none;
+    font-family: Priori-sans;
+    color: #636363;
+    font-size: 1.5rem;
+    margin: 1rem;
+  }
+  
+  .nav-links a::after {
+    content: "";
+    position: absolute;
+    background-color: rgb(139, 17, 238);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+  }
+  
+  a:hover {
+    color: white;
+  }
+  
+  .nav-links a:hover::after {
+    width: 100%;
+  }
+  
+  .nav-links {
+    display: inline-block;
+  }
+  
+  .logo {
+    color: white;
+    font-family: Priori-sans;
+    font-size: 1.5rem;
+    margin-right: auto;
+  }
+  
+  .about-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12rem;
+    padding: 3rem;
+  }
+  
+  .about-text {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+  }
+  
+  .about-text h1 {
+    font-family: Priori-sans;
+    font-size: 8rem;
+    color: rgb(139, 17, 238);
+  }
+  
+  .about-text p {
+    font-family: Poppins;
+    font-size: 1rem;
+    color: white;
+    padding: 2rem 0;
+  }
+  
+  .about-img {
+    width: auto;
+    height: 30rem;
+    filter: grayscale(100%);
+  }
+  
+  .footer {
+    height: 12.5rem;
+    width: 100%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    justify-content: space-between;
+    background-color: rgb(139, 17, 238);
+    position: absolute;
+    bottom: 0;
+  }
+  
+  .social {
+    display: flex;
+    align-content: center;
+    padding: 1rem;
+  }
+  
+  .social a {
+    padding: 0.5rem;
+  }
+  
+  .footer-list {
+    list-style: none;
+  }
+  
+  .footer-list p {
+    font-family: Priori-sans;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    color: white;
+  }
+  
+  ::selection {
+    color: white;
+    background-color: rgb(139, 17, 238);
+  }
+  
